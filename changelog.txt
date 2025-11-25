@@ -2,6 +2,15 @@ Changelog - Affiliates Contact Form 7 - www.itthinx.com
 
 = 5.4.0 =
 * WordPress 6.9 compatible.
+* Added graphic image in plugin folder, to avoid offloading it from remote location.
+* Added missing translators comments.
+* Added validation hint WordPress.Security.EscapeOutput.OutputNotEscaped.
+* Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotSanitized.
+* Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotValidated.
+* Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotSanitized.
+* Fixed referral Post field, showing the post/page containing the form.
+* Fixed _load_textdomain_just_in_time warning.
+* Added method for getting supported_currencies.
 
 = 5.3.0 =
 * WordPress 6.0 compatible.
