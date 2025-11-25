@@ -142,7 +142,7 @@ class Affiliates_CF7_Handler_Legacy {
 		if ( class_exists( 'WPCF7_Submission' ) ) {
 			$submission = WPCF7_Submission::get_instance();
 			$posted_data = $submission->get_posted_data();
-			$container_post_id = $submission->get_meta('container_post_id'); // the post/page id containing the form
+			$container_post_id = $submission->get_meta( 'container_post_id' ); // the post/page id containing the form
 			$uploaded_files = $submission->uploaded_files();
 		} else {
 			$posted_data = $form->posted_data;
