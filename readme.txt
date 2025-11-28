@@ -2,9 +2,9 @@
 Contributors: itthinx
 Donate link: https://www.itthinx.com/shop/
 Tags: affiliate, affiliates, affiliate marketing, referral, contact form 7
-Requires at least: 5.6
+Requires at least: 6.5
 Tested up to: 6.9
-Requires PHP: 5.6.0
+Requires PHP: 7.4.0
 Stable tag: 5.4.0
 License: GPLv3
 
