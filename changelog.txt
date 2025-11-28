@@ -8,6 +8,7 @@ Changelog - Affiliates Contact Form 7 - www.itthinx.com
 * Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotSanitized.
 * Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotValidated.
 * Added validation hint WordPress.Security.ValidatedSanitizedInput.InputNotSanitized.
+* Added validation hint PluginCheck.CodeAnalysis.Offloading.OffloadedContent.
 * Fixed referral Post field, showing the post/page containing the form.
 * Fixed _load_textdomain_just_in_time warning.
 * Fixed error when getting supported_currencies.

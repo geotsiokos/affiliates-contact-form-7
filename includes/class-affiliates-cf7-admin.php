@@ -320,7 +320,7 @@ class Affiliates_CF7_Admin {
 
 		$output .= '<div style="font-size:0.9em">';
 		$output .= '<p>';
-		$image_html = $usage_stats ? "<img src='" . untrailingslashit( plugins_url( AFF_CF7_PLUGIN_DOMAIN ) ) . "/images/affiliates-contact-form-7.png' alt=''/>" : '';
+		$image_html = $usage_stats ? "<img src='https://www.itthinx.com/img/affiliates-contact-form-7/affiliates-contact-form-7.png' alt=''/>" : ''; // phpcs:ignore PluginCheck.CodeAnalysis.Offloading.OffloadedContent
 		$output .= wp_kses( $image_html, array( 'img' => array( 'src' => array(), 'alt' => array() ) ) );
 		$output .= wp_kses(
 			sprintf(
