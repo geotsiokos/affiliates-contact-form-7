@@ -12,6 +12,8 @@ Changelog - Affiliates Contact Form 7 - www.itthinx.com
 * Fixed referral Post field, showing the post/page containing the form.
 * Fixed _load_textdomain_just_in_time warning.
 * Fixed error when getting supported_currencies.
+* Requires at least WordPress 6.5.
+* Requires at least PHP 7.4.
 
 = 5.3.0 =
 * WordPress 6.0 compatible.
