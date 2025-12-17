@@ -127,7 +127,7 @@ class Affiliates_CF7_Admin {
 				}
 				$options[Affiliates_CF7::PETITION_FORMS] = $petition_form_ids;
 
-				if ( isset( $_POST[Affiliates_CF7::CURRENCY] ) && in_array( $_POST[Affiliates_CF7::CURRENCY], Affiliates_CF7::$supported_currencies ) ) {
+				if ( isset( $_POST[Affiliates_CF7::CURRENCY] ) && in_array( $_POST[Affiliates_CF7::CURRENCY], Affiliates_CF7::get_supported_currencies() ) ) {
 					$options[Affiliates_CF7::CURRENCY] = wp_unslash( $_POST[Affiliates_CF7::CURRENCY] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 				}
 

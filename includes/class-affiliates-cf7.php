@@ -40,7 +40,9 @@ class Affiliates_CF7 {
 	const CURRENCY = 'currency';
 
 	/**
-	 * Supported currencies array (overr
+	 * Supported currencies array
+	 *
+	 * @deprecated as of 5.4.0
 	 *
 	 * @var array
 	 */
@@ -174,7 +176,8 @@ class Affiliates_CF7 {
 	 * Initializes the integration.
 	 */
 	public static function init() {
-		add_action( 'init', array( __CLASS__, 'wp_init' ) );
+		// @since 5.4.0 use priority 11 to make sure we act after core plugin has run its own init action
+		add_action( 'init', array( __CLASS__, 'wp_init' ), 11 );
 	}
 
 	/**
@@ -275,7 +278,13 @@ class Affiliates_CF7 {
 	 * @return array of currency IDs
 	 */
 	public static function get_supported_currencies() {
-		return apply_filters( 'affiliates_cf7_currencies', self::$supported_currencies );
+		$supported_currencies = Affiliates::$supported_currencies;
+		if ( is_array( $supported_currencies ) ) {
+			$keys = $supported_currencies;
+		} else {
+			$keys = self::$supported_currencies;
+		}
+		return apply_filters( 'affiliates_cf7_currencies', $keys );
 	}
 
 }
